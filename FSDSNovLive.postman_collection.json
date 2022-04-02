@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "3f9d07c9-bc44-48af-8392-f4608eb42215",
+		"name": "FSDSNovLive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/mysql/getdata",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"database\" : \"CarbonUci\",\r\n    \"table\" : \"carbon_nanotubes\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mysql/getdata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mysql",
+						"getdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mongodb/getdata",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"database\" : \"CarbonUci\",\r\n    \"table\" : \"carbon_nanotubes\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mysql/getdata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mysql",
+						"getdata"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
